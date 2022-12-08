@@ -5,7 +5,6 @@ def get_distance(tree, neighbours):
         if neighbour>=tree:
             break
     return distance
-    
 
 def print_matrix(matrix):
     for i in range(len(matrix)):
@@ -17,7 +16,6 @@ map_trees = [[0 for _ in range(len(lines[0]))] for _ in range(len(lines))]
 for i in range(len(lines)):
     for j in range(len(lines[0])):
         map_trees[i][j]=int(lines[i][j])
-
 
 result=0
 for i in range(len(map_trees)):
@@ -31,5 +29,4 @@ for i in range(len(map_trees)):
         if distance>result:
             result=distance  
         
-
 print(f"Scenic score: {result}")
